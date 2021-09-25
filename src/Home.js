@@ -13,22 +13,62 @@ export default function Home() {
           <label>Detergents</label>
 
           <div className="Product_Holder">
-            <div className="Product_Showcase"></div>
-            <div className="Product_Showcase"></div>
-            <div className="Product_Showcase"></div>
-            <div className="Product_Showcase"></div>
-            <div className="Product_Showcase"></div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
           </div>
         </div>
         <div className="Product-Section">
           <label>Creams</label>
 
           <div className="Product_Holder">
-            <div className="Product_Showcase"></div>
-            <div className="Product_Showcase"></div>
-            <div className="Product_Showcase"></div>
-            <div className="Product_Showcase"></div>
-            <div className="Product_Showcase"></div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
+            <div className="Product_Showcase">
+              <div className="Product_img"></div>
+              <label>Product Description</label>
+              <label>Price</label>
+            </div>
           </div>
         </div>
         <div className="Make-Order">
