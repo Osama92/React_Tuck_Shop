@@ -31,12 +31,7 @@ p {
     flex-direction: column;
     justify-content: center;
   }
-  .PZ-Logo {
-    width: 100px;
-    height: 100px;
-    background: url("https://newsignature.com/wp-content/uploads/2020/08/pzcussons-logo-tile.png");
-    object-fit: cover;
-  }
+
   .Login-Header {
     width: 80%;
     height: 20%;
@@ -50,6 +45,15 @@ p {
     background: orange;
     border-radius: 5px;
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .Login-Inputs-Holder input {
+    width: 100%;
+    height: 80%;
+    background: none;
+    border: none;
+    color: black;
   }
   .Login-Modes {
     width: 90%;
