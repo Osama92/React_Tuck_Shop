@@ -44,7 +44,7 @@ export default function Login() {
         />
       </div>
       <div className="Login-Modes">
-        <div className="Login-Mode" onClick={() => Mynav()}>
+        <div className="Login-Mode">
           <p>
             Log in <span> › </span>
           </p>
