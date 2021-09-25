@@ -26,15 +26,21 @@ p {
   .Main {
     width: 100%;
     height: 100vh;
-    background: silver;
+    /* background: silver; */
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  .PZ-Logo {
+    width: 100px;
+    height: 100px;
+    background: url("https://newsignature.com/wp-content/uploads/2020/08/pzcussons-logo-tile.png");
+    object-fit: cover;
+  }
   .Login-Header {
     width: 80%;
     height: 20%;
-    background: orange;
+    /* background: orange; */
     display: flex;
     flex-direction: column;
   }
@@ -50,7 +56,7 @@ p {
     height: 10%;
     display: flex;
     flex-direction: row;
-    background: orange;
+    /* background: orange; */
     margin-top: 30px;
     justify-content: space-between;
   }
@@ -63,7 +69,7 @@ p {
   .Guest-Mode {
     width: 40%;
     height: 100%;
-    background: blue;
+    background: silver;
     border-radius: 5px;
   }
 }
