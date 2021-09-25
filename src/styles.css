@@ -12,6 +12,7 @@ p {
 @media only screen and (min-width: 320px) and (max-width: 667px) {
   p {
     font-family: "Source Sans Pro", sans-serif;
+    font-size: 2rem;
   }
   h1 {
     font-family: "Source Sans Pro", sans-serif;
@@ -20,5 +21,21 @@ p {
     width: 100%;
     height: 100vh;
     background: silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Login-Header {
+    width: 60%;
+    height: 30%;
+    background: orange;
+    display: flex;
+    align-items: center;
+  }
+  .Login-Inputs-Holder {
+    width: 90%;
+    height: 15%;
+    background: orange;
+    border-radius: 5px;
   }
 }
