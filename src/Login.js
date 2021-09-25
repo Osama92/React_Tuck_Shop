@@ -5,6 +5,7 @@ export default function Login() {
     <div className="Main">
       <div className="Login-Header">
         <p>Hello there! 👋🏾</p>
+        <h1>Welcome to PZC Tuck shop</h1>
       </div>
       <div className="Login-Inputs-Holder"></div>
       <div className="Login-Inputs-Holder"></div>
