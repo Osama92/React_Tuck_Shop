@@ -136,4 +136,30 @@ p {
   .bx {
     color: #fff;
   }
+  .Product-Section {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Product-Section label {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 100%;
+    font-weight: 700;
+  }
+  .Product_Holder {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .Product_Showcase {
+    width: 30%;
+    height: 40%;
+    background: #ff5c58;
+    margin-right: 10px;
+  }
 }
