@@ -2,7 +2,7 @@ import "./styles.css";
 import { useHistory } from "react-router-dom";
 export default function Login() {
   //Variables
-
+  const history = useHistory();
   var clockNumber = "";
   var voucherNumber = "";
 
@@ -20,12 +20,8 @@ export default function Login() {
       console.log("Success");
     }
   };
-  const history = useHistory();
 
   function Mynav() {
-    // return <Link to="/home"></Link>;
-    // console.log("HDH");
-
     history.push("/home");
   }
 

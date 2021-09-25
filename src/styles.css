@@ -26,7 +26,6 @@ p {
   .Main {
     width: 100%;
     height: 100vh;
-    /* background: silver; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,5 +99,41 @@ p {
   .Guest-Mode p {
     padding-left: 20px;
     font-size: 1.2rem;
+  }
+  /* HOME STYLES */
+  .Home-Header {
+    width: 95%;
+    height: 100%;
+  }
+  .Home-Search {
+    width: 100%;
+    height: 8%;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .Home-Search input {
+    width: 100%;
+    height: 90%;
+    background: none;
+    border: none;
+    padding-left: 20px;
+  }
+  .Make-Order {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #ff5c58;
+    right: 50px;
+    bottom: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bx {
+    color: #fff;
   }
 }
