@@ -5,7 +5,7 @@ export default function Home() {
     <div className="Main">
       <div className="Home-Header">
         <h1>Welcome 😉</h1>
-        <p>User name</p>
+        <p>Aobiloye Usama Adedayo</p>
         <div className="Home-Search">
           <input placeholder="Enter Search here..." />
         </div>
