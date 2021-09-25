@@ -1,5 +1,5 @@
 import "./styles.css";
-
+import { useHistory } from "react-router-dom";
 export default function Login() {
   //Variables
 
@@ -15,12 +15,18 @@ export default function Login() {
     voucherNumber = value;
   };
   const _check = () => {
-    console.log(clockNumber);
-    console.log(voucherNumber);
+    if (clockNumber === "Ade" && voucherNumber === "pvc") {
+      Mynav();
+      console.log("Success");
+    }
   };
+  const history = useHistory();
+
   function Mynav() {
     // return <Link to="/home"></Link>;
     // console.log("HDH");
+
+    history.push("/home");
   }
 
   return (
@@ -44,7 +50,7 @@ export default function Login() {
         />
       </div>
       <div className="Login-Modes">
-        <div className="Login-Mode">
+        <div className="Login-Mode" onClick={() => _check()}>
           <p>
             Log in <span> › </span>
           </p>

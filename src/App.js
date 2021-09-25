@@ -1,6 +1,12 @@
 import "./styles.css";
 import Login from "./Login.js";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
 import Home from "./Home.js";
 
 export default function App() {
@@ -9,7 +15,10 @@ export default function App() {
       <div className="App">{/* <Login /> */}</div>
       <Switch>
         <Route path="/" component={Login} exact></Route>
-        <Route path="/home" component={Home}></Route>
+        <Route path="/home">
+          {/* <Redirect to="/" /> */}
+          <Home />
+        </Route>
       </Switch>
     </Router>
   );
