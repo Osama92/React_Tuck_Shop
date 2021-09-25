@@ -14,8 +14,14 @@ export default function Login() {
         <input placeholder="Enter Voucher Number" />
       </div>
       <div className="Login-Modes">
-        <div className="Login-Mode"></div>
-        <div className="Guest-Mode"></div>
+        <div className="Login-Mode">
+          <p>
+            Log in <span> › </span>
+          </p>
+        </div>
+        <div className="Guest-Mode">
+          <p>Guest Mode</p>
+        </div>
       </div>
     </div>
   );

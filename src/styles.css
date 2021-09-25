@@ -42,17 +42,22 @@ p {
   .Login-Inputs-Holder {
     width: 90%;
     height: 10%;
-    background: orange;
+    background: #fff;
     border-radius: 5px;
     margin-top: 30px;
     display: flex;
     align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
   .Login-Inputs-Holder input {
     width: 100%;
     height: 80%;
     background: none;
     border: none;
+    color: black;
+    padding-left: 20px;
+  }
+  ::placeholder {
     color: black;
   }
   .Login-Modes {
@@ -67,13 +72,29 @@ p {
   .Login-Mode {
     width: 40%;
     height: 100%;
-    background: red;
+    background: #ff5c58;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .Login-Mode p {
+    color: white;
+    padding-left: 20px;
+    font-size: 1.4rem;
+  }
+  span {
+    padding-left: 20px;
   }
   .Guest-Mode {
     width: 40%;
     height: 100%;
-    background: silver;
+    background: #e1e5ea;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .Guest-Mode p {
+    padding-left: 20px;
+    font-size: 1.2rem;
   }
 }
