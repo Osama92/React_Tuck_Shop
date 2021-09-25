@@ -1,9 +1,24 @@
 import "./styles.css";
 
 export default function Login() {
-  const _check = () => {
-    console.log("Hello");
+  //Variables
+
+  var clockNumber = "";
+  var voucherNumber = "";
+
+  //Functionalities:
+
+  const _get_clock_number = (value) => {
+    clockNumber = value;
   };
+  const _get_voucher_number = (value) => {
+    voucherNumber = value;
+  };
+  const _check = () => {
+    console.log(clockNumber);
+    console.log(voucherNumber);
+  };
+
   return (
     <div className="Main">
       <div className="Login-Header">
@@ -13,13 +28,19 @@ export default function Login() {
         </h1>
       </div>
       <div className="Login-Inputs-Holder">
-        <input placeholder="Enter Your Clock Number" />
+        <input
+          placeholder="Enter Your Clock Number"
+          onChange={(e) => _get_clock_number(e.target.value)}
+        />
       </div>
       <div className="Login-Inputs-Holder">
-        <input placeholder="Enter Voucher Number" onChange={() => _check()} />
+        <input
+          placeholder="Enter Voucher Number"
+          onChange={(e) => _get_voucher_number(e.target.value)}
+        />
       </div>
       <div className="Login-Modes">
-        <div className="Login-Mode">
+        <div className="Login-Mode" onClick={() => _check()}>
           <p>
             Log in <span> › </span>
           </p>
