@@ -11,34 +11,46 @@ export default function Home() {
         </div>
         <div className="Product-Section">
           <label>Detergents</label>
-
           <div className="Product_Holder">
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img className="img" src={require("./products/ZipDet.png")} />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
               <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img className="img" src={require("./products/CanoeDet.png")} />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
               <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img className="img" src={require("./products/ZipDet.png")} />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
               <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img className="img" src={require("./products/CanoeDet.png")} />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
               <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img
+                  className="img"
+                  src={require("./products/MorningFrsh.png")}
+                />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
               <a>Add to Cart</a>
@@ -50,27 +62,37 @@ export default function Home() {
 
           <div className="Product_Holder">
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img className="img" src={require("./products/Robb23.png")} />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
             </div>
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img className="img" src={require("./products/RobbInh.png")} />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
             </div>
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img className="img" src={require("./products/Robb23.png")} />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
             </div>
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img className="img" src={require("./products/RobbInh.png")} />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
             </div>
             <div className="Product_Showcase">
-              <div className="Product_img"></div>
+              <div className="Product_img">
+                <img className="img" src={require("./products/Robb23.png")} />
+              </div>
               <label>Product Description</label>
               <label>Price</label>
             </div>
