@@ -104,7 +104,7 @@ export default function Home() {
           </div>
         </div>
         <div className="Make-Order">
-          <i className="bx bx-cart-alt bx-sm"></i>
+          <i className="bx bx-cart-alt bx-sm bx-tada-hover"></i>
         </div>
       </div>
     </div>
