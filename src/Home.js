@@ -67,6 +67,7 @@ export default function Home() {
               </div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
               <div className="Product_img">
@@ -74,6 +75,7 @@ export default function Home() {
               </div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
               <div className="Product_img">
@@ -81,6 +83,7 @@ export default function Home() {
               </div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
               <div className="Product_img">
@@ -88,6 +91,7 @@ export default function Home() {
               </div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
               <div className="Product_img">
@@ -95,11 +99,12 @@ export default function Home() {
               </div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
           </div>
         </div>
         <div className="Make-Order">
-          <i className="bx bx-plus bx-md"></i>
+          <i className="bx bx-cart-alt bx-sm"></i>
         </div>
       </div>
     </div>
