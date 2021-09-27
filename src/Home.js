@@ -1,6 +1,13 @@
 import "./styles.css";
+import { useHistory } from "react-router-dom";
 
 export default function Home() {
+  var cart_Ani = "bx bx-cart-alt bx-sm ";
+  const history = useHistory();
+
+  function Nav_Cart() {
+    history.push("/cart");
+  }
   return (
     <div className="Main">
       <div className="Home-Header">
@@ -103,8 +110,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="Make-Order">
-          <i className="bx bx-cart-alt bx-sm bx-tada-hover"></i>
+        <div className="Make-Order" onClick={() => Nav_Cart()}>
+          <i className={cart_Ani}></i>
         </div>
       </div>
     </div>
