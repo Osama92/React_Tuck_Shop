@@ -17,26 +17,31 @@ export default function Home() {
               <div className="Product_img"></div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
               <div className="Product_img"></div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
               <div className="Product_img"></div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
               <div className="Product_img"></div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
             <div className="Product_Showcase">
               <div className="Product_img"></div>
               <label>Product Description</label>
               <label>Price</label>
+              <a>Add to Cart</a>
             </div>
           </div>
         </div>
