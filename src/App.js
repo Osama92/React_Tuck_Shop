@@ -12,7 +12,9 @@ export default function App() {
       <Switch>
         <Route path="/" component={Login} exact></Route>
         <Route path="/home" component={Home}></Route>
-        <Route path="/cart" component={Cart}></Route>
+        <Route path="/cart" exact>
+          <Cart />
+        </Route>
       </Switch>
     </Router>
   );
