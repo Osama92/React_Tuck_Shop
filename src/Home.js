@@ -7,17 +7,17 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      item: 2
+      items: products
     };
   }
 
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
 
-    const listItems = products.map((item) => (
+    const listItems = this.state.items.map((item) => (
       <div
         className="Product_Showcase"
-        onClick={() => this.props.addItemToCart(this.state.item)}
+        onClick={() => this.props.addItemToCart(this.state.items)}
       >
         <div className="Product_img">
           <img className="img" src={item.image} />

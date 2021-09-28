@@ -3,7 +3,6 @@ import Login from "./Login.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home.js";
 import Cart from "./Cart";
-// import Counter from "./Counter";
 
 export default function App() {
   return (
