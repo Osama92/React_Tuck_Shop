@@ -1,72 +1,37 @@
 export const products = [
   {
     id: 1,
-    name: "Maggi Cubes",
+    name: "Zip 900g",
     price: 200,
     image: require("./products/ZipDet.png"),
     qty: 1
   },
   {
     id: 2,
-    name: "Indomie Chicken",
+    name: "Canoe 180g",
     price: 300,
-    image: require("./products/ZipDet.png"),
+    image: require("./products/CanoeDet.png"),
     qty: 1
   },
   {
     id: 3,
-    name: "Indomie Onion",
+    name: "Canoe bar Soap",
     price: 400,
-    image: require("./products/ZipDet.png"),
+    image: require("./products/CanoeSoap.png"),
     qty: 1
   },
   {
     id: 4,
-    name: "Devon Kings",
+    name: "Morning Fresh 1Ltr",
     price: 500,
-    image: require("./products/ZipDet.png"),
+    image: require("./products/MorningFrsh.png"),
     qty: 1
   },
   {
     id: 5,
-    name: "Maggi Cubes",
+    name: "Robb Oint 23ml",
     price: 600,
-    image: require("./products/ZipDet.png"),
-    qty: 1
-  },
-  {
-    id: 6,
-    name: "Maggi Cubes",
-    price: 700,
-    image: require("./products/ZipDet.png"),
-    qty: 1
-  },
-  {
-    id: 7,
-    name: "Maggi Cubes",
-    price: 700,
-    image: require("./products/ZipDet.png"),
-    qty: 1
-  },
-  {
-    id: 8,
-    name: "Maggi Cubes",
-    price: 700,
-    image: require("./products/ZipDet.png"),
-    qty: 1
-  },
-  {
-    id: 9,
-    name: "Maggi Cubes",
-    price: 700,
-    image: require("./products/ZipDet.png"),
-    qty: 1
-  },
-  {
-    id: 10,
-    name: "Maggi Cubes",
-    price: 700,
-    image: require("./products/ZipDet.png"),
+    image: require("./products/Robb23.png"),
     qty: 1
   }
 ];

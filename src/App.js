@@ -8,7 +8,6 @@ import Cart from "./Cart";
 export default function App() {
   return (
     <Router>
-      {/* <div className="App"></div> */}
       <Switch>
         <Route path="/" component={Login} exact></Route>
         <Route path="/home" component={Home}></Route>
