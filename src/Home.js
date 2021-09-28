@@ -1,6 +1,7 @@
 import "./styles.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { products } from "./data";
 
 class Home extends Component {
   constructor(props) {
@@ -9,8 +10,11 @@ class Home extends Component {
       item: 2
     };
   }
+
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
+
+    const listItems = products.map((item) => <li>{item}</li>);
 
     return (
       <div className="Main">
@@ -156,6 +160,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
+
           <div
             className="Make-Order"
             onClick={() => this.props.history.push("/cart")}
