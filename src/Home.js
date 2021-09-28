@@ -14,7 +14,19 @@ class Home extends Component {
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
 
-    const listItems = products.map((item) => <li>{item.name}</li>);
+    const listItems = products.map((item) => (
+      <div
+        className="Product_Showcase"
+        onClick={() => this.props.addItemToCart(this.state.item)}
+      >
+        <div className="Product_img">
+          <img className="img" src={item.image} />
+        </div>
+        <label>{item.name}</label>
+        <label>₦{item.price}</label>
+        <a>Add to Cart</a>
+      </div>
+    ));
 
     return (
       <div className="Main">
@@ -26,72 +38,7 @@ class Home extends Component {
           </div>
           <div className="Product-Section">
             <label>Detergents</label>
-            <div className="Product_Holder">
-              <div
-                className="Product_Showcase"
-                onClick={() => this.props.addItemToCart(this.state.item)}
-              >
-                <div className="Product_img">
-                  <img className="img" src={require("./products/ZipDet.png")} />
-                </div>
-                <label>Product Description</label>
-                <label>₦400.00</label>
-                <a>Add to Cart</a>
-              </div>
-              <div
-                className="Product_Showcase"
-                onClick={() => this.props.addItemToCart(this.state.item)}
-              >
-                <div className="Product_img">
-                  <img
-                    className="img"
-                    src={require("./products/CanoeDet.png")}
-                  />
-                </div>
-                <label>Product Description</label>
-                <label>₦400.00</label>
-                <a>Add to Cart</a>
-              </div>
-              <div
-                className="Product_Showcase"
-                onClick={() => this.props.addItemToCart(this.state.item)}
-              >
-                <div className="Product_img">
-                  <img className="img" src={require("./products/ZipDet.png")} />
-                </div>
-                <label>Product Description</label>
-                <label>₦400.00</label>
-                <a>Add to Cart</a>
-              </div>
-              <div
-                className="Product_Showcase"
-                onClick={() => this.props.addItemToCart(this.state.item)}
-              >
-                <div className="Product_img">
-                  <img
-                    className="img"
-                    src={require("./products/CanoeDet.png")}
-                  />
-                </div>
-                <label>Product Description</label>
-                <label>₦400.00</label>
-                <a>Add to Cart</a>
-              </div>
-              <div
-                className="Product_Showcase"
-                onClick={() => this.props.addItemToCart(this.state.item)}
-              >
-                <div className="Product_img">
-                  <img
-                    className="img"
-                    src={require("./products/MorningFrsh.png")}
-                  />
-                </div>
-                <label>Product Description</label>
-                <label>₦400.00</label>
-                <a>Add to Cart</a>
-              </div>
-            </div>
+            <div className="Product_Holder">{listItems}</div>
           </div>
           <div className="Product-Section">
             <label>Creams</label>
@@ -168,7 +115,6 @@ class Home extends Component {
             <i className={cart_Ani}></i>
             <p>{this.props.cartItems.length}</p>
           </div>
-          <ul>{listItems}</ul>
         </div>
       </div>
     );
