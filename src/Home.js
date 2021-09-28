@@ -17,7 +17,7 @@ class Home extends Component {
     const listItems = this.state.items.map((item) => (
       <div
         className="Product_Showcase"
-        onClick={() => this.props.addItemToCart(this.state.items)}
+        onClick={() => this.props.addItemToCart(item)}
       >
         <div className="Product_img">
           <img className="img" src={item.image} />
