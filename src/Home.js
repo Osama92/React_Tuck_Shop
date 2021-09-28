@@ -14,7 +14,7 @@ class Home extends Component {
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
 
-    const listItems = products.map((item) => <li>{item}</li>);
+    const listItems = products.map((item) => <li>{item.name}</li>);
 
     return (
       <div className="Main">
@@ -168,6 +168,7 @@ class Home extends Component {
             <i className={cart_Ani}></i>
             <p>{this.props.cartItems.length}</p>
           </div>
+          <ul>{listItems}</ul>
         </div>
       </div>
     );
