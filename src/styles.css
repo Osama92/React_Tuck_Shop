@@ -237,4 +237,7 @@ a {
     flex-direction: column;
     justify-content: center;
   }
+  .Product_Details p {
+    font-size: 1.4rem;
+  }
 }
