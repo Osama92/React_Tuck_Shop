@@ -12,11 +12,23 @@ class Cart extends Component {
   }
   render() {
     const back_btn = "bx bx-arrow-back";
+    // Items picked View
     const productItems = this.state.products.map((item) => (
-      <div>
-        <p>{item.name}</p>
+      <div className="Pick_Product">
+        <img src={item.image} />
+        <div className="Product_Details">
+          <p>{item.name}</p>
+          <p>₦{item.price}</p>
+        </div>
       </div>
     ));
+    // Empty Cart
+    const emptyCart = () => (
+      <div className="Cart_Item_Holder">
+        <i className="bx bxs-cart-download"></i>
+        <h3>You currently dont have any item(s) in your cart.</h3>
+      </div>
+    );
     return (
       <div className="Main">
         <div className="Cart-Header">
@@ -24,10 +36,7 @@ class Cart extends Component {
           <h1>
             Welcome to your <span className="pzc-color">Shopping Cart</span>.
           </h1>
-          <div className="Cart_Item_Holder">
-            <i className="bx bxs-cart-download"></i>
-            <h3>You currently dont have any item(s) in your cart.</h3>
-          </div>
+          {this.props.cartItems.length > 0 ? productItems : emptyCart()}
         </div>
 
         <div className="Make-Order">

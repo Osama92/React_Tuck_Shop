@@ -213,4 +213,27 @@ a {
     font-size: 10rem;
     color: #ff5c58;
   }
+  .Pick_Product {
+    width: 95%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: orange;
+    margin-top: 20px;
+  }
+  .Pick_Product img {
+    width: 30%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+  .Product_Details {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: green;
+  }
 }
