@@ -10,15 +10,20 @@ class Cart extends Component {
       products: this.props.cartItems
     };
   }
+
   render() {
     const back_btn = "bx bx-arrow-back";
+
     // Items picked View
     const productItems = this.state.products.map((item) => (
-      <div className="Pick_Product">
+      <div className="Pick_Product" key={item.id}>
         <img src={item.image} />
         <div className="Product_Details">
           <p>{item.name}</p>
           <p>₦{item.price}</p>
+          <Link to="/cart" replace>
+            <p onClick={() => this.props.removeItem(item)}>Remove Item</p>
+          </Link>
         </div>
       </div>
     ));
@@ -56,4 +61,15 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(Cart);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    removeItem: (product) =>
+      dispatch({ type: "REMOVE_FROM_CART", payload: product }),
+    increaseCounter: (products) =>
+      dispatch({ type: "INCREASE", payload: products }),
+    decreaseCounter: (products) =>
+      dispatch({ type: "DECREASE", payload: products })
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);
