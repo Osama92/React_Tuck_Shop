@@ -239,5 +239,10 @@ a {
   }
   .Product_Details p {
     font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  .RemoveLabel {
+    font-weight: bold;
+    color: #ff5c58;
   }
 }

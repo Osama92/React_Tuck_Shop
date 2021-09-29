@@ -27,7 +27,9 @@ class Cart extends Component {
         <div className="Product_Details">
           <p>{item.name}</p>
           <p>₦{item.price}</p>
-          <p onClick={() => removeItem(item)}>Remove Item</p>
+          <p onClick={() => removeItem(item)} className="RemoveLabel">
+            Remove Item
+          </p>
         </div>
       </div>
     ));
