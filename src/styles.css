@@ -238,11 +238,12 @@ a {
     justify-content: center;
   }
   .Product_Details p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-top: 10px;
   }
   .RemoveLabel {
     font-weight: bold;
     color: #ff5c58;
+    font-size: 1rem;
   }
 }
