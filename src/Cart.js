@@ -17,7 +17,7 @@ class Cart extends Component {
     const removeItem = (item) => {
       var remove = item.id.toString();
       this.props.removeItem(item);
-      document.getElementById(remove).remove();
+      document.getElementById(remove).style.display = "none";
     };
 
     // Items picked View
