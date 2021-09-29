@@ -14,16 +14,20 @@ class Cart extends Component {
   render() {
     const back_btn = "bx bx-arrow-back";
 
+    const removeItem = (item) => {
+      var remove = item.id.toString();
+      this.props.removeItem(item);
+      document.getElementById(remove).remove();
+    };
+
     // Items picked View
     const productItems = this.state.products.map((item) => (
-      <div className="Pick_Product" key={item.id}>
+      <div className="Pick_Product" id={item.id}>
         <img src={item.image} />
         <div className="Product_Details">
           <p>{item.name}</p>
           <p>₦{item.price}</p>
-          <Link to="/cart" replace>
-            <p onClick={() => this.props.removeItem(item)}>Remove Item</p>
-          </Link>
+          <p onClick={() => removeItem(item)}>Remove Item</p>
         </div>
       </div>
     ));
