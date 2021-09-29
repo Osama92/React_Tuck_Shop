@@ -50,8 +50,8 @@ class Home extends Component {
             className="Make-Order"
             onClick={() => this.props.history.push("/cart")}
           >
-            <i className={cart_Ani}></i>
             <p>{this.props.cartItems.length}</p>
+            <i className={cart_Ani}></i>
           </div>
         </div>
       </div>

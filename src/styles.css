@@ -141,8 +141,14 @@ a {
     bottom: 100px;
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .Make-Order p {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
   }
   .bx {
     color: #fff;
