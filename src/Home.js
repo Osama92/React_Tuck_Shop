@@ -61,9 +61,6 @@ class Home extends Component {
 const mapStateToProps = (state) => {
   return {
     cartItems: state
-    // total: state.reduce((prev, next)=> prev + next.price * next.qty,0),
-    // itemID: state.reduce((prev,item)=> item.id, 0),
-    // itemQty: state.reduce((prev, item)=> item.AvailableQty, 0)
   };
 };
 
