@@ -31,7 +31,10 @@ class Cart extends Component {
             Remove Item
           </p>
         </div>
-        <div className="Quantity"></div>
+        <div className="Quantity">
+          <p>Quantity</p>
+          <p>{item.qty}</p>
+        </div>
       </div>
     ));
     // Empty Cart
