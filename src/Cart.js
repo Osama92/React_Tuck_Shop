@@ -51,6 +51,13 @@ class Cart extends Component {
         </div>
       </div>
     ));
+
+    // Total Amount:
+    const TotalAmount = () => (
+      <div className="TotalView">
+        <p>Total Amount: ₦{this.props.total}.00</p>
+      </div>
+    );
     // Empty Cart
     const emptyCart = () => (
       <div className="Cart_Item_Holder">
@@ -65,7 +72,9 @@ class Cart extends Component {
           <h1>
             Welcome to your <span className="pzc-color">Shopping Cart</span>.
           </h1>
-          {this.props.cartItems.length > 0 ? productItems : emptyCart()}
+          {this.props.cartItems.length > 0
+            ? [productItems, TotalAmount()]
+            : emptyCart()}
         </div>
 
         <div className="Make-Order">
