@@ -26,14 +26,28 @@ class Cart extends Component {
         <img src={item.image} />
         <div className="Product_Details">
           <p>{item.name}</p>
-          <p>₦{item.price}</p>
+          <p>₦{item.price * item.qty}</p>
           <p onClick={() => removeItem(item)} className="RemoveLabel">
             Remove Item
           </p>
         </div>
         <div className="Quantity">
           <p>Quantity</p>
-          <p>{item.qty}</p>
+          <p className="qty">{item.qty}</p>
+          <div className="IncDec">
+            <div
+              className="Inc"
+              onClick={() => this.props.increaseCounter(item)}
+            >
+              <i className="bx bx-plus"></i>
+            </div>
+            <div
+              className="Dec"
+              onClick={() => this.props.decreaseCounter(item)}
+            >
+              <i className="bx bx-minus"></i>
+            </div>
+          </div>
         </div>
       </div>
     ));
