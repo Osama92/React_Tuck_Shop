@@ -76,12 +76,11 @@ class Cart extends Component {
             ? [productItems, TotalAmount()]
             : emptyCart()}
         </div>
-
-        <div className="Make-Order">
-          <Link to={"/home"}>
+        <Link to={"/home"}>
+          <div className="Make-Order">
             <i className={back_btn}></i>
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     );
   }
