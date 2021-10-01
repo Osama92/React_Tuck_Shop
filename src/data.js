@@ -3,7 +3,7 @@ export const products = [
     id: 1,
     name: "Zip 900g",
     price: 200,
-    image: require("./products/ZipDet.png"),
+    image: require("../src/products/ZipDet.png"),
     qty: 1
   },
   {
