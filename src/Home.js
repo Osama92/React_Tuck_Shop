@@ -37,11 +37,11 @@ class Home extends Component {
             <input placeholder="Enter Search here..." />
           </div>
           <div className="Product-Section">
-            <label>Detergents</label>
+            <label className="Section_label">Detergents</label>
             <div className="Product_Holder">{listItems}</div>
           </div>
           <div className="Product-Section">
-            <label>Creams</label>
+            <label className="Section_label">Creams</label>
 
             <div className="Product_Holder">{listItems}</div>
           </div>
