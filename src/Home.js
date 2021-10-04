@@ -14,10 +14,19 @@ class Home extends Component {
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
 
+    const touchANimation = (item) => {
+      document.getElementById(item.id).style.transform = "scale(0.8)";
+      setTimeout(() => {
+        document.getElementById(item.id).style.transform = "scale(1)";
+      }, 300);
+      console.log(document.getElementById(item.id));
+    };
+
     const listItems = this.state.items.map((item) => (
       <div
         className="Product_Showcase"
-        onClick={() => this.props.addItemToCart(item)}
+        id={item.id}
+        onClick={() => [this.props.addItemToCart(item), touchANimation(item)]}
       >
         <div className="Product_img">
           <img className="img" src={item.image} />
