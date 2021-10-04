@@ -56,6 +56,12 @@ class Cart extends Component {
     const TotalAmount = () => (
       <div className="TotalView">
         <p>Total Amount: ₦{this.props.total}.00</p>
+
+        <div className="CheckOut">
+          <Link to={"/checkOut"}>
+            <p>Check Out</p>
+          </Link>
+        </div>
       </div>
     );
     // Empty Cart
