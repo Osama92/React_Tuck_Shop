@@ -18,6 +18,8 @@ class Home extends Component {
       document.getElementById(item.id).style.transform = "scale(0.8)";
       setTimeout(() => {
         document.getElementById(item.id).style.transform = "scale(1)";
+        document.getElementById(item.name).innerHTML = "Added to Cart ✔";
+        document.getElementById(item.name).style.color = "Green";
       }, 300);
     };
 
@@ -32,7 +34,7 @@ class Home extends Component {
         </div>
         <label>{item.name}</label>
         <label>₦{item.price}</label>
-        <a>Add to Cart</a>
+        <a id={item.name}>Add to Cart</a>
       </div>
     ));
 
