@@ -19,7 +19,6 @@ class Home extends Component {
       setTimeout(() => {
         document.getElementById(item.id).style.transform = "scale(1)";
       }, 300);
-      console.log(document.getElementById(item.id));
     };
 
     const listItems = this.state.items.map((item) => (
