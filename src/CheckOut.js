@@ -18,7 +18,7 @@ class CheckOut extends Component {
         <div className="Cart-Header">
           <p>Hey there! 👋🏾</p>
           <h1>
-            Welcome to your <span className="pzc-color">Shopping Cart</span>.
+            Welcome to <span className="pzc-color">CheckOut page</span>.
           </h1>
         </div>
         <Link to={"/cart"}>
@@ -27,7 +27,7 @@ class CheckOut extends Component {
           </div>
         </Link>
       </div>
-    )
+    );
   }
 }
 
