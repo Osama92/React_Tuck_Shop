@@ -16,7 +16,7 @@ class CheckOut extends Component {
     return (
       <div className="Main">
         <div className="Cart-Header">
-          <p>Hey there! 👋🏾</p>
+          <p>One Last Step!😊</p>
           <h1>
             Welcome to <span className="pzc-color">CheckOut page</span>.
           </h1>
