@@ -22,10 +22,6 @@ class CheckOut extends Component {
           <p>Quantity: {item.qty}</p>
           <p>Price: ₦{item.price * item.qty}.00</p>
         </div>
-        {/* <div className="Quantity">
-          <p>Quantity</p>
-          <p className="qty">{item.qty}</p>
-        </div> */}
       </div>
     ));
 

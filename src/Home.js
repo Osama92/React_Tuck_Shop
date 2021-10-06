@@ -2,6 +2,7 @@ import "./styles.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { products } from "./data";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
   constructor(props) {
@@ -16,10 +17,18 @@ class Home extends Component {
 
     const touchANimation = (item) => {
       document.getElementById(item.id).style.transform = "scale(0.8)";
+
       setTimeout(() => {
         document.getElementById(item.id).style.transform = "scale(1)";
         document.getElementById(item.name).innerHTML = "Added to Cart ✔";
         document.getElementById(item.name).style.color = "Green";
+      }, 300);
+    };
+
+    const btnAnimation = () => {
+      document.getElementById("pop").style.transform = "scale(0.9)";
+      setTimeout(() => {
+        document.getElementById("pop").style.transform = "scale(1)";
       }, 300);
     };
 
@@ -56,13 +65,12 @@ class Home extends Component {
             <div className="Product_Holder">{listItems}</div>
           </div>
 
-          <div
-            className="Make-Order"
-            onClick={() => this.props.history.push("/cart")}
-          >
-            <p>{this.props.cartItems.length}</p>
-            <i className={cart_Ani}></i>
-          </div>
+          <Link to="/cart">
+            <div id="pop" className="Make-Order" onClick={() => btnAnimation()}>
+              <p>{this.props.cartItems.length}</p>
+              <i className={cart_Ani}></i>
+            </div>
+          </Link>
         </div>
       </div>
     );

@@ -83,7 +83,7 @@ class Cart extends Component {
             : emptyCart()}
         </div>
         <Link to={"/home"}>
-          <div className="Make-Order">
+          <div className="Make-Order" id="pop">
             <i className={back_btn}></i>
           </div>
         </Link>
