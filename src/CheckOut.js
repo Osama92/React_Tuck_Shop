@@ -51,7 +51,7 @@ class CheckOut extends Component {
         <div className="Cart-Header">
           <p>One Last Step!😊</p>
           <h1>
-            Welcome to <span className="pzc-color">CheckOut page</span>.
+            Welcome to <span className="pzc-color">CheckOut Page</span>.
           </h1>
           {this.props.cartItems.length > 0
             ? [pickedItems, TotalAmount()]
