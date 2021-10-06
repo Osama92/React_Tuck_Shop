@@ -15,9 +15,8 @@ class CheckOut extends Component {
     const back_btn = "bx bx-arrow-back";
 
     const pickedItems = this.state.products.map((item) => (
-      <div className="Pick_Product" id={item.id}>
-        <img src={item.image} />
-        <div className="Product_Details">
+      <div className="Picked_Product" id={item.id}>
+        <div className="Picked_Details">
           <p>{item.name}</p>
           <p>₦{item.price * item.qty}</p>
         </div>
@@ -34,7 +33,7 @@ class CheckOut extends Component {
 
         <div className="CheckOut">
           <Link to={"/checkOut"}>
-            <p>Check Out</p>
+            <p>Pay</p>
           </Link>
         </div>
       </div>

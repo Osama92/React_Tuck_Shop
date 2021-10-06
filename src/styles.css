@@ -324,4 +324,28 @@ a {
   .CheckOut p {
     color: white;
   }
+  .Picked_Product {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .Picked_Details {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Picked_Details p {
+    font-size: 0.9rem;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
 }
