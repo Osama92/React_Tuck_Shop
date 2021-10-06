@@ -25,13 +25,6 @@ class Home extends Component {
       }, 300);
     };
 
-    const btnAnimation = () => {
-      document.getElementById("pop").style.transform = "scale(0.9)";
-      setTimeout(() => {
-        document.getElementById("pop").style.transform = "scale(1)";
-      }, 300);
-    };
-
     const listItems = this.state.items.map((item) => (
       <div
         className="Product_Showcase"
@@ -66,7 +59,7 @@ class Home extends Component {
           </div>
 
           <Link to="/cart">
-            <div id="pop" className="Make-Order" onClick={() => btnAnimation()}>
+            <div className="Make-Order">
               <p>{this.props.cartItems.length}</p>
               <i className={cart_Ani}></i>
             </div>
