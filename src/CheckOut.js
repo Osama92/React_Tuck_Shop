@@ -18,18 +18,19 @@ class CheckOut extends Component {
       <div className="Picked_Product" id={item.id}>
         <div className="Picked_Details">
           <p>{item.name}</p>
-          <p>₦{item.price * item.qty}</p>
+          <p>Quantity: {item.qty}</p>
+          <p>Price: ₦{item.price * item.qty}.00</p>
         </div>
-        <div className="Quantity">
+        {/* <div className="Quantity">
           <p>Quantity</p>
           <p className="qty">{item.qty}</p>
-        </div>
+        </div> */}
       </div>
     ));
 
     const TotalAmount = () => (
       <div className="TotalView">
-        <p>Total Amount: ₦{this.props.total}.00</p>
+        <p>Check Out Pay: ₦{this.props.total}.00</p>
 
         <div className="CheckOut">
           <Link to={"/checkOut"}>
