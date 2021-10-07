@@ -32,7 +32,7 @@ class CheckOut extends Component {
     const payment = () => (
       <div id="paymentModal">
         <div className="Paylabel">
-          <p>Why so serious, Show your SMART </p>
+          <p>Why so serious 😁, Show your SMART </p>
         </div>
       </div>
     );
