@@ -36,7 +36,10 @@ class CheckOut extends Component {
         </div>
         <div className="Question">
           <p>{firstNumber}</p>
+          <p>+</p>
           <p>{secondNumber}</p>
+          <p>=</p>
+          <input />
         </div>
       </div>
     );
