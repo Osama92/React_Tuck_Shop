@@ -34,7 +34,10 @@ class CheckOut extends Component {
         <div className="Paylabel">
           <p>Why so serious 😁, Show your SMART </p>
         </div>
-        <div className="Question"></div>
+        <div className="Question">
+          <p>{firstNumber}</p>
+          <p>{secondNumber}</p>
+        </div>
       </div>
     );
 

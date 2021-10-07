@@ -371,5 +371,8 @@ a {
     height: 50%;
     background: #ff5c58;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
