@@ -13,7 +13,8 @@ class CheckOut extends Component {
   }
 
   render() {
-    const back_btn = "bx bx-right-arrow-alt";
+    const _btn = "bx bx-right-arrow-alt bx-md bx-burst";
+    const back_btn = "bx bx-arrow-back";
 
     var firstNumber = Math.floor(Math.random() * 11);
     var secondNumber = Math.floor(Math.random() * 11);
@@ -51,9 +52,11 @@ class CheckOut extends Component {
 
         <div
           className="CheckOut"
-          onClick={() =>
-            (document.getElementById("paymentModal").style.display = "block")
-          }
+          onClick={() => [
+            (document.getElementById("paymentModal").style.display = "block"),
+            (document.getElementById("two").style.display = "block"),
+            (document.getElementById("one").style.display = "none")
+          ]}
         >
           <p>Pay</p>
         </div>
@@ -82,7 +85,8 @@ class CheckOut extends Component {
 
         <Link to={"/cart"}>
           <div className="Make-payment">
-            <i className={back_btn}></i>
+            <i className={back_btn} id="one"></i>
+            <i className={_btn} id="two"></i>
           </div>
         </Link>
       </div>
