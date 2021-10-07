@@ -7,7 +7,8 @@ class CheckOut extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: this.props.cartItems
+      products: this.props.cartItems,
+      inputValue: 0
     };
   }
 
@@ -39,7 +40,7 @@ class CheckOut extends Component {
           <p>+</p>
           <p>{secondNumber}</p>
           <p>=</p>
-          <input type="number" maxLength={2} />
+          <input type="number" maxLength="2" value={this.state.inputValue} />
         </div>
       </div>
     );
