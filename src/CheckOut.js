@@ -39,7 +39,7 @@ class CheckOut extends Component {
           <p>+</p>
           <p>{secondNumber}</p>
           <p>=</p>
-          <input type="number" maxLength="2" />
+          <input type="number" maxLength={2} />
         </div>
       </div>
     );
