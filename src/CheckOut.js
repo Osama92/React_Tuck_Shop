@@ -14,6 +14,10 @@ class CheckOut extends Component {
   render() {
     const back_btn = "bx bx-arrow-back";
 
+    var firstNumber = Math.floor(Math.random() * 11);
+    var secondNumber = Math.floor(Math.random() * 11);
+    var result = firstNumber + secondNumber;
+
     const pickedItems = this.state.products.map((item) => (
       <div className="Picked_Product" id={item.id}>
         <div className="Picked_Details">
@@ -25,14 +29,26 @@ class CheckOut extends Component {
       </div>
     ));
 
+    const payment = () => (
+      <div className="paymentModal">
+        <div className="Paylabel">
+          <p>Why so serious, Show your SMART </p>
+        </div>
+      </div>
+    );
+
     const TotalAmount = () => (
       <div className="TotalView">
         <p>Check Out Pay: ₦{this.props.total}.00</p>
 
-        <div className="CheckOut">
-          <Link to={"/checkOut"}>
-            <p>Pay</p>
-          </Link>
+        <div
+          className="CheckOut"
+          onClick={() =>
+            (document.getElementsByClassName("paymentModal").styles.display =
+              "block")
+          }
+        >
+          <p>Pay</p>
         </div>
       </div>
     );
@@ -49,11 +65,12 @@ class CheckOut extends Component {
         <div className="Cart-Header">
           <p>One Last Step!😊</p>
           <h1>
-            Welcome to <span className="pzc-color">CheckOut Page</span>.
+            Welcome to <span className="pzc-color">CheckOut Page.</span>
           </h1>
           {this.props.cartItems.length > 0
             ? [pickedItems, TotalAmount()]
             : emptyCart()}
+          {payment()}
         </div>
 
         <Link to={"/cart"}>
