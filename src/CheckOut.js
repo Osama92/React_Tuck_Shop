@@ -30,7 +30,7 @@ class CheckOut extends Component {
     ));
 
     const payment = () => (
-      <div className="paymentModal">
+      <div id="paymentModal">
         <div className="Paylabel">
           <p>Why so serious, Show your SMART </p>
         </div>
@@ -44,8 +44,7 @@ class CheckOut extends Component {
         <div
           className="CheckOut"
           onClick={() =>
-            (document.getElementsByClassName("paymentModal").styles.display =
-              "block")
+            (document.getElementById("paymentModal").style.display = "block")
           }
         >
           <p>Pay</p>
