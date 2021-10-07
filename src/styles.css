@@ -387,4 +387,23 @@ a {
     border: none;
     font-size: 3rem;
   }
+  .Make-payment {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #ff5c58;
+    right: 50px;
+    bottom: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .Make-payment p {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
 }

@@ -13,7 +13,7 @@ class CheckOut extends Component {
   }
 
   render() {
-    const back_btn = "bx bx-arrow-back";
+    const back_btn = "bx bx-right-arrow-alt";
 
     var firstNumber = Math.floor(Math.random() * 11);
     var secondNumber = Math.floor(Math.random() * 11);
@@ -81,7 +81,7 @@ class CheckOut extends Component {
         </div>
 
         <Link to={"/cart"}>
-          <div className="Make-Order">
+          <div className="Make-payment">
             <i className={back_btn}></i>
           </div>
         </Link>
