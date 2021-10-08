@@ -8,17 +8,15 @@ class CheckOut extends Component {
     super(props);
     this.state = {
       products: this.props.cartItems,
-      inputValue: 0
+      inputValue: 0,
+      firstNumber: 0,
+      secondNumber: 0
     };
   }
 
   render() {
     const _btn = "bx bx-right-arrow-alt bx-md bx-burst";
     const back_btn = "bx bx-arrow-back";
-
-    var firstNumber = Math.floor(Math.random() * 11);
-    var secondNumber = Math.floor(Math.random() * 11);
-    var result = firstNumber + secondNumber;
 
     const pickedItems = this.state.products.map((item) => (
       <div className="Picked_Product" id={item.id}>
@@ -36,6 +34,8 @@ class CheckOut extends Component {
     };
 
     const payCheck = () => {
+      var result = this.state.firstNumber + this.state.secondNumber;
+
       if (result === this.state.inputValue) {
         alert("Success");
       } else {
@@ -49,9 +49,9 @@ class CheckOut extends Component {
           <p>Why so serious 😁, Show your SMART </p>
         </div>
         <div className="Question">
-          <p>{firstNumber}</p>
+          <p>{this.state.firstNumber}</p>
           <p>+</p>
-          <p>{secondNumber}</p>
+          <p>{this.state.secondNumber}</p>
           <p>=</p>
           <input
             type="number"
@@ -62,6 +62,15 @@ class CheckOut extends Component {
       </div>
     );
 
+    const random = () => {
+      // var firstNumber = Math.floor(Math.random() * 11);
+      // var secondNumber = Math.floor(Math.random() * 11);
+      this.setState({
+        firstNumber: Math.floor(Math.random() * 11),
+        secondNumber: Math.floor(Math.random() * 11)
+      });
+    };
+
     const TotalAmount = () => (
       <div className="TotalView">
         <p>Check Out Pay: ₦{this.props.total}.00</p>
@@ -71,7 +80,8 @@ class CheckOut extends Component {
           onClick={() => [
             (document.getElementById("paymentModal").style.display = "block"),
             (document.getElementById("two").style.display = "block"),
-            (document.getElementById("one").style.display = "none")
+            (document.getElementById("one").style.display = "none"),
+            random()
           ]}
         >
           <p>Pay</p>
