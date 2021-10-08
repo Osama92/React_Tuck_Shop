@@ -40,6 +40,7 @@ class CheckOut extends Component {
         alert("Success");
       } else {
         alert("You didnt get that buddy!");
+        alert(result);
       }
     };
 
