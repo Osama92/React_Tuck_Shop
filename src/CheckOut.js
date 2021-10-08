@@ -35,8 +35,9 @@ class CheckOut extends Component {
 
     const payCheck = () => {
       const result = this.state.firstNumber + this.state.secondNumber;
+      const inputValue = this.state.inputValue;
 
-      if (this.state.inputValue === result) {
+      if (inputValue === result) {
         alert(result);
       } else {
         // alert("You didnt get that buddy!");
