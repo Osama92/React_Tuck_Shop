@@ -54,8 +54,7 @@ class CheckOut extends Component {
           className="CheckOut"
           onClick={() => [
             (document.getElementById("paymentModal").style.display = "block"),
-            (document.getElementById("two").style.display = "block"),
-            (document.getElementById("one").style.display = "none")
+            (document.getElementById("two").style.zIndex = "150")
           ]}
         >
           <p>Pay</p>
@@ -85,7 +84,7 @@ class CheckOut extends Component {
 
         <Link to={"/cart"}>
           <div className="Make-payment">
-            <i className={back_btn} id="one"></i>
+            {/* <i className={back_btn} id="one"></i> */}
             <i className={_btn} id="two"></i>
           </div>
         </Link>
