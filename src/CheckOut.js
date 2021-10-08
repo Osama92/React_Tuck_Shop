@@ -8,7 +8,7 @@ class CheckOut extends Component {
     super(props);
     this.state = {
       products: this.props.cartItems,
-      inputValue: ""
+      inputValue: 0
     };
   }
 
@@ -31,6 +31,18 @@ class CheckOut extends Component {
       </div>
     ));
 
+    const _get_answer = (value) => {
+      this.setState({ inputValue: value });
+    };
+
+    const payCheck = () => {
+      if (result === this.state.inputValue) {
+        alert("Success");
+      } else {
+        alert("You didnt get that buddy!");
+      }
+    };
+
     const payment = () => (
       <div id="paymentModal">
         <div className="Paylabel">
@@ -41,7 +53,11 @@ class CheckOut extends Component {
           <p>+</p>
           <p>{secondNumber}</p>
           <p>=</p>
-          <input type="number" maxLength="2" value={this.state.inputValue} />
+          <input
+            type="number"
+            maxLength="2"
+            onChange={(e) => _get_answer(e.target.value)}
+          />
         </div>
       </div>
     );
@@ -54,7 +70,7 @@ class CheckOut extends Component {
           className="CheckOut"
           onClick={() => [
             (document.getElementById("paymentModal").style.display = "block"),
-            (document.getElementById("two").style.zIndex = "150"),
+            (document.getElementById("two").style.display = "block"),
             (document.getElementById("one").style.display = "none")
           ]}
         >
@@ -83,10 +99,10 @@ class CheckOut extends Component {
           {payment()}
         </div>
 
-        <Link to={"/cart"}>
+        <Link to={"/checkout"}>
           <div className="Make-payment">
             <i className={back_btn} id="one"></i>
-            <i className={_btn} id="two"></i>
+            <i className={_btn} id="two" onClick={() => payCheck()}></i>
           </div>
         </Link>
       </div>

@@ -400,6 +400,7 @@ a {
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    z-index: 201;
   }
   .Make-payment p {
     color: white;
@@ -408,5 +409,6 @@ a {
   }
   #two {
     display: none;
+    z-index: 201;
   }
 }
