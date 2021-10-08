@@ -34,13 +34,13 @@ class CheckOut extends Component {
     };
 
     const payCheck = () => {
-      var result = this.state.firstNumber + this.state.secondNumber;
+      const result = this.state.firstNumber + this.state.secondNumber;
 
       if (this.state.inputValue === result) {
-        alert("Success");
+        alert(result);
       } else {
         // alert("You didnt get that buddy!");
-        alert(result);
+        alert(this.state.inputValue);
       }
     };
 
