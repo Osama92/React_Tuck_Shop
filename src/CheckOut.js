@@ -38,10 +38,10 @@ class CheckOut extends Component {
       const inputValue = this.state.inputValue;
 
       if (inputValue === result) {
-        alert(result);
+        alert("Success");
       } else {
-        // alert("You didnt get that buddy!");
-        alert(this.state.inputValue);
+        alert("You didnt get that buddy!");
+        // alert(this.state.inputValue);
       }
     };
 
