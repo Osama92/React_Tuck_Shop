@@ -357,7 +357,7 @@ a {
     right: 0;
     left: 0;
     display: none;
-    /* z-index: 80; */
+    z-index: 80;
   }
   .Paylabel {
     width: 100%;

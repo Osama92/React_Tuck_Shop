@@ -8,7 +8,7 @@ class CheckOut extends Component {
     super(props);
     this.state = {
       products: this.props.cartItems,
-      inputValue: 0
+      inputValue: ""
     };
   }
 
@@ -54,7 +54,8 @@ class CheckOut extends Component {
           className="CheckOut"
           onClick={() => [
             (document.getElementById("paymentModal").style.display = "block"),
-            (document.getElementById("two").style.zIndex = "150")
+            (document.getElementById("two").style.zIndex = "150"),
+            (document.getElementById("one").style.display = "none")
           ]}
         >
           <p>Pay</p>
@@ -84,7 +85,7 @@ class CheckOut extends Component {
 
         <Link to={"/cart"}>
           <div className="Make-payment">
-            {/* <i className={back_btn} id="one"></i> */}
+            <i className={back_btn} id="one"></i>
             <i className={_btn} id="two"></i>
           </div>
         </Link>
