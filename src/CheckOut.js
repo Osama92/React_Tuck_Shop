@@ -54,11 +54,7 @@ class CheckOut extends Component {
           <p>+</p>
           <p>{this.state.secondNumber}</p>
           <p>=</p>
-          <input
-            type="number"
-            maxLength="2"
-            onChange={(e) => _get_answer(e.target.value)}
-          />
+          <input type="number" onChange={(e) => _get_answer(e.target.value)} />
         </div>
       </div>
     );
