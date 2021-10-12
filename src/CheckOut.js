@@ -36,7 +36,7 @@ class CheckOut extends Component {
     const payment = () => (
       <div id="paymentModal">
         <div className="Paylabel">
-          <p>Why so serious 😁, Show your SMART </p>
+          <p>✌ Solve the below to earn your CheckOut:</p>
         </div>
         <div className="Question">
           <p>{this.state.firstNumber}</p>
