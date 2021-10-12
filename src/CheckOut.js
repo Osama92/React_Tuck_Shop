@@ -33,18 +33,6 @@ class CheckOut extends Component {
       this.setState({ inputValue: value });
     };
 
-    const payCheck = () => {
-      const result = this.state.firstNumber + this.state.secondNumber;
-      const inputValue = this.state.inputValue;
-
-      if (inputValue === result) {
-        alert("Success");
-      } else {
-        alert("You didnt get that buddy!");
-        // alert(this.state.inputValue);
-      }
-    };
-
     const payment = () => (
       <div id="paymentModal">
         <div className="Paylabel">
@@ -61,11 +49,22 @@ class CheckOut extends Component {
     );
 
     const random = () => {
-      
       this.setState({
         firstNumber: Math.floor(Math.random() * 11),
         secondNumber: Math.floor(Math.random() * 11)
       });
+    };
+
+    const payCheck = () => {
+      const result = this.state.firstNumber + this.state.secondNumber;
+      const inputValue = this.state.inputValue;
+
+      if (inputValue === result) {
+        alert("Success");
+      } else {
+        alert("You didnt get that buddy!");
+        // alert(this.state.inputValue);
+      }
     };
 
     const TotalAmount = () => (
