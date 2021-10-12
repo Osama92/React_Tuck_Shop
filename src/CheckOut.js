@@ -61,8 +61,7 @@ class CheckOut extends Component {
     );
 
     const random = () => {
-      // var firstNumber = Math.floor(Math.random() * 11);
-      // var secondNumber = Math.floor(Math.random() * 11);
+      
       this.setState({
         firstNumber: Math.floor(Math.random() * 11),
         secondNumber: Math.floor(Math.random() * 11)
