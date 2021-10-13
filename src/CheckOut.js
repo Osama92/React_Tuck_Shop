@@ -62,7 +62,7 @@ class CheckOut extends Component {
       if (inputValue === result) {
         alert("Success");
       } else {
-        alert("You didnt get that buddy!");
+        alert("Oops! You didnt get that buddy.");
       }
     };
 
