@@ -104,7 +104,7 @@ class CheckOut extends Component {
           {payment()}
         </div>
 
-        <Link to={"/checkout"}>
+        <Link to={"/cart"}>
           <div className="Make-payment">
             <i className={back_btn} id="one"></i>
             <i className={_btn} id="two" onClick={() => payCheck()}></i>
