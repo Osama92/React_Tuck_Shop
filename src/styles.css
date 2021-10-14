@@ -425,7 +425,7 @@ a {
     border-radius: 5px;
     margin: 0 auto;
     margin-top: 20px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
   }
