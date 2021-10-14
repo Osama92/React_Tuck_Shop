@@ -418,4 +418,12 @@ a {
     display: none;
     z-index: 201;
   }
+  .proceed {
+    width: 60%;
+    height: 40px;
+    background: #ff5c58;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
