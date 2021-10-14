@@ -45,7 +45,7 @@ class CheckOut extends Component {
           <p>=</p>
           <input type="number" onChange={(e) => _get_answer(e.target.value)} />
         </div>
-        <div className="proceed">
+        <div id="proceed">
           <Link>
             <p className="white">👏 Continue Shopping!!</p>
           </Link>
@@ -66,7 +66,7 @@ class CheckOut extends Component {
 
       if (inputValue === result) {
         alert("Success");
-        document.getElementsByClassName("proceed").style.display = "flex";
+        document.getElementById("proceed").style.display = "flex";
       } else {
         alert("Oops! You didnt get that buddy.");
       }
