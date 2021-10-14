@@ -46,7 +46,7 @@ class CheckOut extends Component {
           <input type="number" onChange={(e) => _get_answer(e.target.value)} />
         </div>
         <div id="proceed">
-          <Link>
+          <Link to={"/home"}>
             <p className="white">👏 Continue Shopping!!</p>
           </Link>
         </div>
@@ -65,7 +65,9 @@ class CheckOut extends Component {
       const inputValue = Number(this.state.inputValue);
 
       if (inputValue === result) {
-        alert("Success");
+        alert(
+          "Yaay, items will be shipped to your preferred location. Thank you for shopping with us!😊"
+        );
         document.getElementById("proceed").style.display = "flex";
       } else {
         alert("Oops! You didnt get that buddy.");
