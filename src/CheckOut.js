@@ -45,7 +45,11 @@ class CheckOut extends Component {
           <p>=</p>
           <input type="number" onChange={(e) => _get_answer(e.target.value)} />
         </div>
-        <div className="proceed"></div>
+        <div className="proceed">
+          <Link>
+            <p>👏 Continue Shopping!!</p>
+          </Link>
+        </div>
       </div>
     );
 
