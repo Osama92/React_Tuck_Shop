@@ -47,7 +47,7 @@ class CheckOut extends Component {
         </div>
         <div className="proceed">
           <Link>
-            <p>👏 Continue Shopping!!</p>
+            <p className="white">👏 Continue Shopping!!</p>
           </Link>
         </div>
       </div>
