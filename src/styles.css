@@ -426,8 +426,11 @@ a {
     margin: 0 auto;
     margin-top: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .white {
   color: white;
+  font-size: 20px;
 }
