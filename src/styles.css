@@ -426,6 +426,8 @@ a {
     margin: 0 auto;
     margin-top: 20px;
     display: flex;
-    color: white;
   }
+}
+.white {
+  color: white;
 }
