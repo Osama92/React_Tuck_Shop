@@ -66,6 +66,7 @@ class CheckOut extends Component {
 
       if (inputValue === result) {
         alert("Success");
+        document.getElementsByClassName("proceed").style.display = "flex";
       } else {
         alert("Oops! You didnt get that buddy.");
       }
