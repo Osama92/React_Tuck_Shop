@@ -3,12 +3,14 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { products } from "./data";
 import { Link } from "react-router-dom";
+import Select from "react-dropdown-select";
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: products
+      items: products,
+      name: ""
     };
   }
 
@@ -40,13 +42,27 @@ class Home extends Component {
       </div>
     ));
 
+    const dropItems = (item) => {
+      this.state.items.map(item);
+      this.setState({ name: item.name });
+    };
+
     return (
       <div className="Main">
         <div className="Home-Header">
           <h1>Welcome 😉</h1>
           <p>Atobiloye Usama Adedayo</p>
           <div className="Home-Search">
-            <input placeholder="Enter Search here..." />
+            {/* <input placeholder="Enter Search here..." /> */}
+            <Select
+              placeholder="Enter Search here..."
+              style={{
+                width: "130%",
+                height: "100%",
+                paddingLeft: "0px",
+                border: "none"
+              }}
+            />
           </div>
           <div className="Product-Section">
             <label className="Section_label">Detergents</label>
