@@ -10,9 +10,9 @@ export default function App() {
     <Router>
       <Switch>
         {/* <Route path="/" component={Login} exact></Route> */}
-        <Route path="/" component={Home}></Route>
-        <Route path="/cart" component={Cart}></Route>
-        <Route path="/checkOut" component={CheckOut}></Route>
+        <Route path="/" component={Home} exact></Route>
+        <Route path="/cart" component={Cart} exact></Route>
+        <Route path="/checkOut" component={CheckOut} exact></Route>
       </Switch>
     </Router>
   );
