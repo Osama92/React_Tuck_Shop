@@ -45,7 +45,7 @@ class CheckOut extends Component {
           <input type="number" onChange={(e) => _get_answer(e.target.value)} />
         </div>
         <div id="proceed">
-          <Link to={"/"}>
+          <Link to={"/"} onClick={() => this.props.clear(this.props.cartItems)}>
             <p className="white">👏 Continue Shopping!!</p>
           </Link>
         </div>
@@ -127,5 +127,10 @@ const mapStateToProps = (state) => {
     total: state.reduce((prev, next) => prev + next.price * next.qty, 0)
   };
 };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    clear: (product) => dispatch({ type: "CLEAR", payload: product })
+  };
+};
 
-export default connect(mapStateToProps)(CheckOut);
+export default connect(mapStateToProps, mapDispatchToProps)(CheckOut);
