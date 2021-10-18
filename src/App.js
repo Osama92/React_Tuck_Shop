@@ -10,7 +10,7 @@ export default function App() {
     <Router>
       <Switch>
         {/* <Route path="/" component={Login} exact></Route> */}
-        <Route path="/home" component={Home}></Route>
+        <Route path="/" component={Home}></Route>
         <Route path="/cart" component={Cart}></Route>
         <Route path="/checkOut" component={CheckOut}></Route>
       </Switch>
