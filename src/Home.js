@@ -42,11 +42,6 @@ class Home extends Component {
       </div>
     ));
 
-    const dropItems = (item) => {
-      this.state.items.map(item);
-      this.setState({ name: item.name });
-    };
-
     return (
       <div className="Main">
         <div className="Home-Header">
