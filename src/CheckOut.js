@@ -45,7 +45,7 @@ class CheckOut extends Component {
           <input type="number" onChange={(e) => _get_answer(e.target.value)} />
         </div>
         <div id="proceed">
-          <Link to={"/home"}>
+          <Link to={"/"}>
             <p className="white">👏 Continue Shopping!!</p>
           </Link>
         </div>
