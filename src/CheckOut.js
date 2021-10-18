@@ -21,7 +21,6 @@ class CheckOut extends Component {
     const pickedItems = this.state.products.map((item) => (
       <div className="Picked_Product" id={item.id}>
         <div className="Picked_Details">
-          <p>{item.id}.</p>
           <p>{item.name}</p>
           <p>Quantity: {item.qty}</p>
           <p>Price: ₦{item.price * item.qty}.00</p>
