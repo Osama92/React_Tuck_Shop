@@ -57,7 +57,7 @@ class Home extends Component {
           <div className="Home-Search">
             {/* <input placeholder="Enter Search here..." /> */}
             <Select
-              option={searchItem}
+              option={searchItem.itemName}
               placeholder="Enter Search here..."
               style={{
                 width: "130%",
