@@ -59,7 +59,8 @@ class Home extends Component {
           <div className="Home-Search">
             {/* <input placeholder="Enter Search here..." /> */}
             <Select
-              option={searchItem.map((i) => i.itemName)}
+              option={data}
+              value={this.state.name}
               placeholder="Enter Search here..."
               style={{
                 width: "130%",
