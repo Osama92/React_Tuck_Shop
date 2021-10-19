@@ -22,7 +22,9 @@ class Home extends Component {
         itemName: item.name
       };
     });
-    console.log(searchItem);
+
+    const data = searchItem.map((i) => i.itemName);
+    console.log(data);
 
     const touchANimation = (item) => {
       document.getElementById(item.id).style.transform = "scale(0.8)";
@@ -57,7 +59,7 @@ class Home extends Component {
           <div className="Home-Search">
             {/* <input placeholder="Enter Search here..." /> */}
             <Select
-              option={searchItem.itemName}
+              option={searchItem.map((i) => i.itemName)}
               placeholder="Enter Search here..."
               style={{
                 width: "130%",
