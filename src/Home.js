@@ -17,6 +17,13 @@ class Home extends Component {
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
 
+    const searchItem = products.map(function (item) {
+      return {
+        itemName: item.name
+      };
+    });
+    console.log(searchItem);
+
     const touchANimation = (item) => {
       document.getElementById(item.id).style.transform = "scale(0.8)";
 
@@ -50,6 +57,7 @@ class Home extends Component {
           <div className="Home-Search">
             {/* <input placeholder="Enter Search here..." /> */}
             <Select
+              option={searchItem}
               placeholder="Enter Search here..."
               style={{
                 width: "130%",
