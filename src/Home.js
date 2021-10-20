@@ -59,7 +59,9 @@ class Home extends Component {
           <div className="Home-Search">
             {/* <input placeholder="Enter Search here..." /> */}
             <Select
-              options={{ data }}
+              options={products}
+              noDataLabel="No matches found"
+              dropdownGap={5}
               value={this.state.name}
               placeholder="Enter Search here..."
               style={{
