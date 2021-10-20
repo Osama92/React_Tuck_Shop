@@ -10,9 +10,12 @@ class Home extends Component {
     super(props);
     this.state = {
       items: products,
-      name: ""
+      name: "",
+      selectValues: []
     };
   }
+
+  setValues = (selectValues) => this.setState({ selectValues });
 
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
@@ -60,9 +63,10 @@ class Home extends Component {
             {/* <input placeholder="Enter Search here..." /> */}
             <Select
               options={products}
+              values={[products.find((opt) => opt.name === "Zip 900g")]}
               noDataLabel="No matches found"
               dropdownGap={5}
-              value={this.state.name}
+              onChange={(values) => this.setValues(values)}
               placeholder="Enter Search here..."
               style={{
                 width: "130%",
