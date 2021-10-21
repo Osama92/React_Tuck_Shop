@@ -134,10 +134,10 @@ a {
   }
 
   #Home-Search-active {
-    width: 100%;
+    width: 95%;
     height: 50%;
     background: #fff;
-    position: relative;
+    position: fixed;
     border-radius: 5px;
     margin-top: 10px;
     display: flex;

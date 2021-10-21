@@ -52,7 +52,7 @@ class Home extends Component {
     ));
 
     return (
-      <div className="Main">
+      <div className="Main" id="exit">
         <div className="Home-Header">
           <h1>Welcome 😉</h1>
           <p>Atobiloye Usama Adedayo</p>
@@ -86,6 +86,7 @@ class Home extends Component {
     );
   }
 }
+
 const mapStateToProps = (state) => {
   return {
     cartItems: state
