@@ -29,7 +29,9 @@ class Home extends Component {
     // const data = searchItem.map((i) => i.itemName);
     // console.log(data);
 
-    const input = document.getElementById("Home-Search");
+    const input = () => {
+      document.getElementById("searchItems").style.display = "flex";
+    };
 
     const touchANimation = (item) => {
       document.getElementById(item.id).style.transform = "scale(0.8)";
@@ -68,7 +70,9 @@ class Home extends Component {
           <div id={this.state.search}>
             <input
               placeholder="Enter Search here..."
-              onClick={() => this.setState({ search: "Home-Search-active" })}
+              onClick={() => {
+                this.setState({ search: "Home-Search-active" }), input();
+              }}
             />
             <div id="searchItems">{SearchItems}</div>
           </div>

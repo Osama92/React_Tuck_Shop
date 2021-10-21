@@ -149,8 +149,12 @@ a {
   #Home-Search-active input {
     height: 20%;
     background: none;
-    border: none;
     padding-left: 20px;
+    border-bottom-color: #ff5c58;
+    border-bottom-width: 1px;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
   }
   #Home-Search input {
     width: 100%;
@@ -162,7 +166,7 @@ a {
   #searchItems {
     width: 100%;
     height: 70%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 20px;
