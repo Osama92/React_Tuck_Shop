@@ -14,7 +14,7 @@ class Home extends Component {
     };
   }
 
-  setValues = (selectValues) => this.setState({ selectValues });
+  // setValues = (selectValues) => this.setState({ selectValues });
 
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
@@ -27,6 +27,8 @@ class Home extends Component {
 
     // const data = searchItem.map((i) => i.itemName);
     // console.log(data);
+
+    const input = document.getElementsByClassName("Home-Search");
 
     const touchANimation = (item) => {
       document.getElementById(item.id).style.transform = "scale(0.8)";
@@ -59,7 +61,10 @@ class Home extends Component {
           <h1>Welcome 😉</h1>
           <p>Atobiloye Usama Adedayo</p>
           <div className="Home-Search">
-            <input placeholder="Enter Search here..." />
+            <input
+              placeholder="Enter Search here..."
+              onClick={() => input.rem}
+            />
           </div>
           <div className="Product-Section">
             <label className="Section_label">Detergents</label>
