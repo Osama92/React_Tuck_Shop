@@ -63,6 +63,7 @@ class Home extends Component {
                 this.setState({ search: "Home-Search-active" }), input();
               }}
             />
+
             <div id="searchItems">{SearchItems}</div>
           </div>
           <div className="Product-Section">
