@@ -15,19 +15,8 @@ class Home extends Component {
     };
   }
 
-  // setValues = (selectValues) => this.setState({ selectValues });
-
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
-
-    // const searchItem = products.map(function (item) {
-    //   return {
-    //     itemName: item.name
-    //   };
-    // });
-
-    // const data = searchItem.map((i) => i.itemName);
-    // console.log(data);
 
     const input = () => {
       document.getElementById("searchItems").style.display = "flex";
