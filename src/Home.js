@@ -28,7 +28,7 @@ class Home extends Component {
     // const data = searchItem.map((i) => i.itemName);
     // console.log(data);
 
-    const input = document.getElementsByClassName("Home-Search");
+    const input = document.getElementById("Home-Search");
 
     const touchANimation = (item) => {
       document.getElementById(item.id).style.transform = "scale(0.8)";
@@ -60,10 +60,12 @@ class Home extends Component {
         <div className="Home-Header">
           <h1>Welcome 😉</h1>
           <p>Atobiloye Usama Adedayo</p>
-          <div className="Home-Search">
+          <div id="Home-Search">
             <input
               placeholder="Enter Search here..."
-              onClick={() => input.rem}
+              onClick={() => {
+                input.id = "Home-Search_active";
+              }}
             />
           </div>
           <div className="Product-Section">
