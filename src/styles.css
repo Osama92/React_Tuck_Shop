@@ -132,7 +132,7 @@ a {
     align-items: center;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
-  #Home-Search_active {
+  #Home-Search-active {
     width: 100%;
     height: 40%;
     background: #fff;
@@ -141,7 +141,7 @@ a {
     display: flex;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
-  #Home-Search_active input {
+  #Home-Search-active input {
     width: 100%;
     height: 10%;
     background: none;

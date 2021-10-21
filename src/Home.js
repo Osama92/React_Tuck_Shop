@@ -10,7 +10,8 @@ class Home extends Component {
     this.state = {
       items: products,
       name: "",
-      selectValues: []
+      selectValues: [],
+      search: "Home-Search"
     };
   }
 
@@ -60,12 +61,10 @@ class Home extends Component {
         <div className="Home-Header">
           <h1>Welcome 😉</h1>
           <p>Atobiloye Usama Adedayo</p>
-          <div id="Home-Search">
+          <div id={this.state.search}>
             <input
               placeholder="Enter Search here..."
-              onClick={() => {
-                input.id = "Home-Search_active";
-              }}
+              onClick={() => this.setState({ search: "Home-Search-active" })}
             />
           </div>
           <div className="Product-Section">
