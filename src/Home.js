@@ -56,6 +56,10 @@ class Home extends Component {
       </div>
     ));
 
+    const SearchItems = this.state.items.map((item) => (
+      <label>{item.name}</label>
+    ));
+
     return (
       <div className="Main">
         <div className="Home-Header">
@@ -66,6 +70,7 @@ class Home extends Component {
               placeholder="Enter Search here..."
               onClick={() => this.setState({ search: "Home-Search-active" })}
             />
+            {SearchItems}
           </div>
           <div className="Product-Section">
             <label className="Section_label">Detergents</label>
