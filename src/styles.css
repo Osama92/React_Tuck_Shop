@@ -132,6 +132,22 @@ a {
     align-items: center;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
+  .Home-Search_active {
+    width: 100%;
+    height: 40%;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .Home-Search_active input {
+    width: 100%;
+    height: 10%;
+    background: none;
+    border: none;
+    padding-left: 20px;
+  }
   .Home-Search input {
     width: 100%;
     height: 90%;
