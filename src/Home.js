@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { products } from "./data";
 import { Link } from "react-router-dom";
-import Select from "react-dropdown-select";
 
 class Home extends Component {
   constructor(props) {
@@ -20,14 +19,14 @@ class Home extends Component {
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
 
-    const searchItem = products.map(function (item) {
-      return {
-        itemName: item.name
-      };
-    });
+    // const searchItem = products.map(function (item) {
+    //   return {
+    //     itemName: item.name
+    //   };
+    // });
 
-    const data = searchItem.map((i) => i.itemName);
-    console.log(data);
+    // const data = searchItem.map((i) => i.itemName);
+    // console.log(data);
 
     const touchANimation = (item) => {
       document.getElementById(item.id).style.transform = "scale(0.8)";
@@ -60,21 +59,7 @@ class Home extends Component {
           <h1>Welcome 😉</h1>
           <p>Atobiloye Usama Adedayo</p>
           <div className="Home-Search">
-            {/* <input placeholder="Enter Search here..." /> */}
-            <Select
-              options={products}
-              values={[products.find((opt) => opt.name === "Zip 900g")]}
-              noDataLabel="No matches found"
-              dropdownGap={5}
-              onChange={(values) => this.setValues(values)}
-              placeholder="Enter Search here..."
-              style={{
-                width: "130%",
-                height: "100%",
-                paddingLeft: "0px",
-                border: "none"
-              }}
-            />
+            <input placeholder="Enter Search here..." />
           </div>
           <div className="Product-Section">
             <label className="Section_label">Detergents</label>
