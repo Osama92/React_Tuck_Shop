@@ -70,7 +70,7 @@ class Home extends Component {
               placeholder="Enter Search here..."
               onClick={() => this.setState({ search: "Home-Search-active" })}
             />
-            {SearchItems}
+            <div id="searchItems">{SearchItems}</div>
           </div>
           <div className="Product-Section">
             <label className="Section_label">Detergents</label>
