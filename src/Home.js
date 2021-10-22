@@ -12,7 +12,8 @@ class Home extends Component {
       name: "",
       search: "Home-Search",
       productss: [],
-      inMemoryProducts: []
+      inMemoryProducts: [],
+      defaultValue: ""
     };
   }
 
@@ -51,6 +52,7 @@ class Home extends Component {
       document.getElementById("searchItems").style.display = "none";
       document.getElementById("closeSearch").style.display = "none";
       this.setState({ search: "Home-Search" });
+      this.setState({ defaultValue: "" });
     };
 
     const touchANimation = (item) => {
@@ -91,11 +93,15 @@ class Home extends Component {
           <p>Atobiloye Usama Adedayo</p>
           <div id={this.state.search}>
             <input
+              value={this.state.defaultValue}
               placeholder="Enter Search here..."
               onClick={() => {
                 this.setState({ search: "Home-Search-active" }), input();
               }}
-              onChange={(value) => this.searchProducts(value.target.value)}
+              onChange={(value) => {
+                this.searchProducts(value.target.value),
+                  this.setState({ defaultValue: value.target.value });
+              }}
             />
 
             <div id="searchItems">{SearchItems}</div>
