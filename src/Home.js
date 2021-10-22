@@ -10,8 +10,9 @@ class Home extends Component {
     this.state = {
       items: products,
       name: "",
-      selectValues: [],
-      search: "Home-Search"
+      search: "Home-Search",
+      products: [],
+      inMemoryProducts: []
     };
   }
 
@@ -25,9 +26,9 @@ class Home extends Component {
 
   searchProducts = (value) => {
     const filteredProducts = this.state.inMemoryProducts.filter((products) => {
-      let productsLowercase = products.name.toLowerCase();
+      let productsLowercase = products.name.toString().toLowerCase();
 
-      let searchTermLowercase = value.toLowerCase();
+      let searchTermLowercase = value.toString().toLowerCase();
 
       return productsLowercase.indexOf(searchTermLowercase) > -1;
     });
@@ -92,6 +93,7 @@ class Home extends Component {
               onClick={() => {
                 this.setState({ search: "Home-Search-active" }), input();
               }}
+              onChange={(value) => this.searchProducts(value)}
             />
 
             <div id="searchItems">{SearchItems}</div>
