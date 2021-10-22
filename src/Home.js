@@ -97,7 +97,7 @@ class Home extends Component {
           <div id={this.state.search}>
             <input
               // value={this.state.defaultValue}
-              placeholder="Enter Search here..."
+              placeholder="Enter item search here..."
               onClick={() => {
                 this.setState({ search: "Home-Search-active" }), input();
               }}
