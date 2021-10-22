@@ -85,7 +85,9 @@ class Home extends Component {
         {item.name}
       </label>
     ));
-    const NotFound = () => <p>Item you entered cannot be found</p>;
+    const NotFound = () => (
+      <p className="item-not-found">Item you entered cannot be found. 😢</p>
+    );
 
     return (
       <div className="Main" id="exit">
