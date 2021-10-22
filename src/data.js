@@ -35,3 +35,41 @@ export const products = [
     qty: 1
   }
 ];
+
+export const products2 = [
+  {
+    id: 6,
+    name: "Jet hair Cream",
+    price: 200,
+    image: require("./products/jetCream.png").default,
+    qty: 1
+  },
+  {
+    id: 7,
+    name: "Venus Relaxer",
+    price: 300,
+    image: require("./products/VenusRelaxer.png").default,
+    qty: 1
+  },
+  {
+    id: 8,
+    name: "CB Oil",
+    price: 400,
+    image: require("./products/CBOil.jpg").default,
+    qty: 1
+  },
+  {
+    id: 9,
+    name: "CB Powder",
+    price: 500,
+    image: require("./products/CBPwd.png").default,
+    qty: 1
+  },
+  {
+    id: 10,
+    name: "CB Jelly",
+    price: 600,
+    image: require("./products/CBJelly.png").default,
+    qty: 1
+  }
+];

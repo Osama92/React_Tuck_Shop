@@ -1,7 +1,7 @@
 import "./styles.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { products } from "./data";
+import { products, products2 } from "./data";
 import { Link } from "react-router-dom";
 
 class Home extends Component {
@@ -9,6 +9,7 @@ class Home extends Component {
     super(props);
     this.state = {
       items: products,
+      items2: products2,
       name: "",
       search: "Home-Search",
       productss: [],
@@ -79,6 +80,20 @@ class Home extends Component {
         <a id={item.name}>Add to Cart</a>
       </div>
     ));
+    const listItems2 = this.state.items2.map((item) => (
+      <div
+        className="Product_Showcase"
+        id={item.id}
+        onClick={() => [this.props.addItemToCart(item), touchANimation(item)]}
+      >
+        <div className="Product_img">
+          <img className="img" src={item.image} />
+        </div>
+        <label>{item.name}</label>
+        <label>₦{item.price}</label>
+        <a id={item.name}>Add to Cart</a>
+      </div>
+    ));
 
     const SearchItems = this.state.productss.map((item) => (
       <label class="dropItems" onClick={() => this.props.addItemToCart(item)}>
@@ -117,9 +132,9 @@ class Home extends Component {
             <div className="Product_Holder">{listItems}</div>
           </div>
           <div className="Product-Section">
-            <label className="Section_label">Creams</label>
+            <label className="Section_label">Body Care</label>
 
-            <div className="Product_Holder">{listItems}</div>
+            <div className="Product_Holder">{listItems2}</div>
           </div>
 
           <Link to="/cart">
