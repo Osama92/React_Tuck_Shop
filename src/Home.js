@@ -11,14 +11,14 @@ class Home extends Component {
       items: products,
       name: "",
       search: "Home-Search",
-      products: [],
+      productss: [],
       inMemoryProducts: []
     };
   }
 
   loadProducts = () => {
     this.setState({
-      products: products,
+      productss: products,
       inMemoryProducts: products,
       isLoading: false
     });
@@ -32,7 +32,7 @@ class Home extends Component {
 
       return productsLowercase.indexOf(searchTermLowercase) > -1;
     });
-    this.setState({ products: filteredProducts });
+    this.setState({ productss: filteredProducts });
   };
 
   componentDidMount() {
@@ -78,7 +78,7 @@ class Home extends Component {
       </div>
     ));
 
-    const SearchItems = this.state.items.map((item) => (
+    const SearchItems = this.state.productss.map((item) => (
       <label onClick={() => this.props.addItemToCart(item)}>{item.name}</label>
     ));
 
@@ -93,7 +93,7 @@ class Home extends Component {
               onClick={() => {
                 this.setState({ search: "Home-Search-active" }), input();
               }}
-              onChange={(value) => this.searchProducts(value)}
+              onChange={(value) => this.searchProducts(value.target.value)}
             />
 
             <div id="searchItems">{SearchItems}</div>
