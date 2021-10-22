@@ -1,5 +1,4 @@
 import "./styles.css";
-// import Login from "./Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import Cart from "./Cart";
@@ -9,7 +8,6 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        {/* <Route path="/" component={Login} exact></Route> */}
         <Route path="/" component={Home} exact></Route>
         <Route path="/cart" component={Cart} exact></Route>
         <Route path="/checkOut" component={CheckOut} exact></Route>
