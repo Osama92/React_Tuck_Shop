@@ -85,6 +85,7 @@ class Home extends Component {
         {item.name}
       </label>
     ));
+    const NotFound = () => <p>Item you entered cannot be found</p>;
 
     return (
       <div className="Main" id="exit">
@@ -93,18 +94,20 @@ class Home extends Component {
           <p>Atobiloye Usama Adedayo</p>
           <div id={this.state.search}>
             <input
-              value={this.state.defaultValue}
+              // value={this.state.defaultValue}
               placeholder="Enter Search here..."
               onClick={() => {
                 this.setState({ search: "Home-Search-active" }), input();
               }}
               onChange={(value) => {
-                this.searchProducts(value.target.value),
-                  this.setState({ defaultValue: value.target.value });
+                this.searchProducts(value.target.value);
+                // this.setState({ defaultValue: value.target.value });
               }}
             />
 
-            <div id="searchItems">{SearchItems}</div>
+            <div id="searchItems">
+              {this.state.productss.length > 0 ? SearchItems : NotFound()}
+            </div>
             <div id="closeSearch" onClick={() => closeSearch()}>
               <i className="bx bx-x"></i>
             </div>
