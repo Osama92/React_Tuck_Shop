@@ -182,7 +182,11 @@ a {
     height: 70%;
     display: none;
     flex-direction: column;
-    justify-content: space-evenly;
+  }
+  .dropItems {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
     padding-left: 20px;
   }
   .Make-Order {

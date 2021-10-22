@@ -79,7 +79,9 @@ class Home extends Component {
     ));
 
     const SearchItems = this.state.productss.map((item) => (
-      <label onClick={() => this.props.addItemToCart(item)}>{item.name}</label>
+      <label class="dropItems" onClick={() => this.props.addItemToCart(item)}>
+        {item.name}
+      </label>
     ));
 
     return (
