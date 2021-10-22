@@ -23,6 +23,12 @@ class Home extends Component {
       document.getElementById("closeSearch").style.display = "flex";
     };
 
+    const closeSearch = () => {
+      document.getElementById("searchItems").style.display = "none";
+      document.getElementById("closeSearch").style.display = "none";
+      this.setState({ search: "Home-Search" });
+    };
+
     const touchANimation = (item) => {
       document.getElementById(item.id).style.transform = "scale(0.8)";
 
@@ -66,7 +72,9 @@ class Home extends Component {
             />
 
             <div id="searchItems">{SearchItems}</div>
-            <div id="closeSearch">x</div>
+            <div id="closeSearch" onClick={() => closeSearch()}>
+              <i className="bx bx-x"></i>
+            </div>
           </div>
           <div className="Product-Section">
             <label className="Section_label">Detergents</label>
