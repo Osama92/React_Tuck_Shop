@@ -1,7 +1,7 @@
 import "./styles.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { products, products2 } from "./data";
+import { products, products2, consolidated } from "./data";
 import { Link } from "react-router-dom";
 
 class Home extends Component {
@@ -20,8 +20,8 @@ class Home extends Component {
 
   loadProducts = () => {
     this.setState({
-      productss: products,
-      inMemoryProducts: products,
+      productss: consolidated,
+      inMemoryProducts: consolidated,
       isLoading: false
     });
   };
