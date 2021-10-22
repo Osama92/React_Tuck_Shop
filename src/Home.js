@@ -20,6 +20,7 @@ class Home extends Component {
 
     const input = () => {
       document.getElementById("searchItems").style.display = "flex";
+      document.getElementById("closeSearch").style.display = "flex";
     };
 
     const touchANimation = (item) => {

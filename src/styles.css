@@ -164,7 +164,7 @@ a {
     border-radius: 10px;
     right: 20px;
     top: 15px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     color: white;
