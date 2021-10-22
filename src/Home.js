@@ -96,14 +96,12 @@ class Home extends Component {
           <p>Atobiloye Usama Adedayo</p>
           <div id={this.state.search}>
             <input
-              // value={this.state.defaultValue}
               placeholder="Enter item search here..."
               onClick={() => {
                 this.setState({ search: "Home-Search-active" }), input();
               }}
               onChange={(value) => {
                 this.searchProducts(value.target.value);
-                // this.setState({ defaultValue: value.target.value });
               }}
             />
 
