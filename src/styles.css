@@ -122,6 +122,9 @@ a {
     width: 95%;
     height: 100%;
   }
+  .Home-Header p {
+    font-size: 1.1rem;
+  }
   #Home-Search {
     width: 100%;
     height: 8%;

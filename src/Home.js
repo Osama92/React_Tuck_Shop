@@ -108,7 +108,7 @@ class Home extends Component {
       <div className="Main" id="exit">
         <div className="Home-Header">
           <h1>Welcome 😉</h1>
-          <p>Lets make shopping easy and fun!</p>
+          <p>We make shopping easy and fun!</p>
           <div id={this.state.search}>
             <input
               placeholder="Enter item search here..."
