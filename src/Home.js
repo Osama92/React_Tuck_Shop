@@ -15,6 +15,29 @@ class Home extends Component {
     };
   }
 
+  loadProducts = () => {
+    this.setState({
+      products: products,
+      inMemoryProducts: products,
+      isLoading: false
+    });
+  };
+
+  searchProducts = (value) => {
+    const filteredProducts = this.state.inMemoryProducts.filter((products) => {
+      let productsLowercase = products.name.toLowerCase();
+
+      let searchTermLowercase = value.toLowerCase();
+
+      return productsLowercase.indexOf(searchTermLowercase) > -1;
+    });
+    this.setState({ products: filteredProducts });
+  };
+
+  componentDidMount() {
+    this.loadProducts();
+  }
+
   render() {
     var cart_Ani = "bx bx-cart-alt bx-sm ";
 
