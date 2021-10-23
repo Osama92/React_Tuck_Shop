@@ -35,7 +35,7 @@ export default function Login() {
       </div>
       <div className="Login-Inputs-Holder">
         <input
-          placeholder="Enter Your Clock Number"
+          placeholder="Ente Clock Number"
           onChange={(e) => _get_clock_number(e.target.value)}
         />
       </div>
