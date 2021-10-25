@@ -12,8 +12,6 @@ const cartItems = (state = initialState, action) => {
         );
         const updateUnitProduct = {
           ...existinProduct[0]
-          //qty: existinProduct[0].qty + action.payload.qty,
-          //price: existinProduct[0].price + action.payload.price
         };
         return [...withoutEP, updateUnitProduct];
       }
