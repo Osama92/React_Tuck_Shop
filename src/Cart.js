@@ -26,7 +26,7 @@ class Cart extends Component {
         <img src={item.image} />
         <div className="Product_Details">
           <p>{item.name}</p>
-          <p>₦{item.price * item.qty}</p>
+          <p style={{fontWeight:600}}>₦{item.price * item.qty}.00</p>
           <p onClick={() => removeItem(item)} className="RemoveLabel">
             Remove Item
           </p>
