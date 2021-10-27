@@ -98,11 +98,12 @@ class CheckOut extends Component {
     return (
       <div className="Main">
         <div id="proceed">
+          <p className="white">Thank you for shopping with us.</p>
+          <p style={{ color: "white", fontSize: "4rem", marginBottom: "20px" }}>
+            👏
+          </p>
           <Link to={"/"} onClick={() => this.props.clear(this.props.cartItems)}>
-            <p className="white">Thank you for shopping with us.</p>
-            <p className="white">Tap here.</p>
-            <i className="bx bx-down-arrow-alt bx-lg"></i>
-            <p className="white">👏 Continue Shopping!!</p>
+            <p className="white">Continue Shopping!!</p>
           </Link>
         </div>
         <div className="Cart-Header">
