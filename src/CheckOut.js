@@ -99,6 +99,8 @@ class CheckOut extends Component {
       <div className="Main">
         <div id="proceed">
           <Link to={"/"} onClick={() => this.props.clear(this.props.cartItems)}>
+            <p>Thank you for shopping with us.</p>
+            <p>Tap here.</p>
             <p className="white">👏 Continue Shopping!!</p>
           </Link>
         </div>
