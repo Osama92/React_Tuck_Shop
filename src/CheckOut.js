@@ -44,11 +44,6 @@ class CheckOut extends Component {
           <p>=</p>
           <input type="number" onChange={(e) => _get_answer(e.target.value)} />
         </div>
-        <div id="proceed">
-          <Link to={"/"} onClick={() => this.props.clear(this.props.cartItems)}>
-            <p className="white">👏 Continue Shopping!!</p>
-          </Link>
-        </div>
       </div>
     );
 
@@ -68,8 +63,10 @@ class CheckOut extends Component {
           "Yaay, items will be shipped to your preferred location. Thank you for shopping with us!😊"
         );
         document.getElementById("proceed").style.display = "flex";
+        document.getElementById("paymentModal").style.display = "none";
       } else {
         alert("Oops! You didnt get that buddy.");
+        document.getElementById("paymentModal").style.display = "none";
       }
     };
 
@@ -100,6 +97,11 @@ class CheckOut extends Component {
 
     return (
       <div className="Main">
+        <div id="proceed">
+          <Link to={"/"} onClick={() => this.props.clear(this.props.cartItems)}>
+            <p className="white">👏 Continue Shopping!!</p>
+          </Link>
+        </div>
         <div className="Cart-Header">
           <p>One Last Step!😊</p>
           <h1>
