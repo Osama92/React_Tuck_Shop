@@ -60,7 +60,7 @@ class CheckOut extends Component {
 
       if (inputValue === result) {
         alert(
-          "Yaay, items will be shipped to your preferred location. Thank you for shopping with us!😊"
+          "Yaay 🥳, items will be shipped to your preferred location. Thank you for shopping with us!😊"
         );
         document.getElementById("proceed").style.display = "flex";
         document.getElementById("paymentModal").style.display = "none";
