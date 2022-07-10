@@ -18,6 +18,11 @@ class Home extends Component {
     };
   }
 
+  checkScreen_Size = () => {
+    if (window.screen.height > 1023) {
+      alert("For Better experience, switch to Mobile size");
+    }
+  };
   loadProducts = () => {
     this.setState({
       productss: consolidated,
@@ -39,6 +44,7 @@ class Home extends Component {
 
   componentDidMount() {
     this.loadProducts();
+    this.checkScreen_Size();
   }
 
   render() {
